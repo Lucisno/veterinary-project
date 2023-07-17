@@ -1,0 +1,79 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD982;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body{
+    margin-left: 60px;
+    padding-bottom:  400px;
+    font-family: 'Quicksand';
+    background-color: #686565;
+    height: 100px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M 0%2c105 C 57.6%2c170.2 172.8%2c416.4 288%2c431 C 403.2%2c445.6 460.8%2c155.4 576%2c178 C 691.2%2c200.6 748.8%2c535 864%2c544 C 979.2%2c553 1036.8%2c275.2 1152%2c223 C 1267.2%2c170.8 1382.4%2c271 1440%2c283L1440 560L0 560z' fill='%23184a7e'%3e%3c/path%3e%3cpath d='M 0%2c428 C 96%2c390.8 288%2c220 480%2c242 C 672%2c264 768%2c534.4 960%2c538 C 1152%2c541.6 1344%2c315.6 1440%2c260L1440 560L0 560z' fill='%232264ab'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.my-order-content{
+    display:grid ;
+    grid-template-columns: auto 1fr auto;
+    width: 1000px;
+    overflow: hidden;
+    
+}
+
+.my-order-content{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+   
+}
+
+.order{
+    display: grid;
+    grid-template-columns: auto 1fr ;
+    gap:16px ;
+    align-items: start;
+    background: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.order p :nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+.order p :nth-child(2){
+    text-align:end ;
+    font-weight: bold;
+}
+
+.order p span :nth-child(1){
+    font-size: var(--md);
+    color: var(--very-light-pink);
+    font-weight: bold;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
